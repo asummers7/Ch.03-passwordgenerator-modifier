@@ -17,25 +17,81 @@ var char = ["!", '@', '#', '$', '%', '&', '*', '?'];
 
 //creating a generate password function 
 function generatePassword() {
+  //this allows me create a window and log the password length and respond if too long or short
   var promptResponse = window.prompt("How many characters long would you like your password?")
-  console.log(promptResponse)
-  if (promptResponse < 8) {
+  function charlengthconfirm () {
+    console.log(promptResponse)
+    if (promptResponse < 8) {
       console.log("Password needs to be longer than 8 characters"),
       window.alert("Password needs to be longer than 8 characters")
-  } else if (promptResponse > 128) {
+    } else if (promptResponse > 128) {
       console.log("Password needs to be less than 128 characters"),
       window.alert("Password needs to be less than 128 characters")
-  } else {
-      console.log("Need a password length amount")
-      window.alert("Need a password length amount")
+    } else {
+    }
   }
+  //calling the previous function to work 
+  charlengthconfirm()
+
+  //assigning another variable to help me run a future function 
+  var lowercaseconfirm = window.confirm("Would you like your password to include lowercase characters?")
+  function lowercaseRandom () {
+    if (lowercaseconfirm) {
+      console.log(lowercaseconfirm)
+      for (let i = 0; i < lowercase.length; i++) {
+        Math.random[i]
+        return [i]
+      }
+    } else {
+      console.log(lowercaseconfirm)
+      console.log("did not want lowercase characters in password")
+    } 
+  } 
+  //Calling the lowercaserandom function to work 
+  lowercaseRandom()
+
+
+
+
+
+  //assigning variable to use in a function
+  var Uppercaseconfirm = window.confirm("Would you like your password to include uppercase characters?")
+  function UppercaseRandom () {
+    if (Uppercaseconfirm) {
+      console.log(Uppercaseconfirm)  
+    } else {
+      console.log(Uppercaseconfirm)
+      console.log("Did not want uppercase characters in password")  
+    }
+  }
+  //calling the function
+  UppercaseRandom()
   
+  //assigning variable to use in a function
+  var numbersconfirm = window.confirm("Would you like your password to include numbers?")
+  function numbersRandom () {
+    if (numbersconfirm) {
+      console.log(numbersconfirm)
+    } else {
+      console.log(numbersconfirm)
+      console.log("Did not want numbers in password")
+    }
+  }
+  //Calling the function 
+  numbersRandom()
 
-
-  window.confirm("Would you like your password to include lowercase characters?")
-  window.confirm("Would you like your password to include uppercase characters?") 
-  window.confirm("Would you like your password to include numbers?")
-  window.confirm("Would you like you password to include special characters?")
+  //assigning variable to use in a function 
+  var specialcharconfirm = window.confirm("Would you like you password to include special characters?")
+  function specialcharRandom () {
+    if (specialcharconfirm) {
+      console.log(specialcharconfirm)
+    } else {
+      console.log(specialcharconfirm)
+      console.log("Did not want special characters in password")
+    }
+  }
+  //calling the function to execute
+  specialcharRandom()
 
 
 }
