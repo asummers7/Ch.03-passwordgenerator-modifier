@@ -52,7 +52,7 @@ function generatePassword() {
       console.log("did not want lowercase characters in password")
     } 
   
-  
+    // another funcitonal if statement. 
     if (Uppercaseconfirm) {
       console.log(Uppercaseconfirm)
       bucket.push(uppercase) 
