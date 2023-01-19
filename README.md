@@ -1,7 +1,6 @@
 
 # PasswordGenerator-Modifier 
 
-undefined
 
 ## Description
 This project started off with a basic HTML, and CSS template. It was my duty to implement JavaScript functionality that allowed a user of the project to generate a random password. This password was to contain (upon the discretion of the user) numbers, letters, and special characters. And it was to be a length, determined by the user, of between 8 and 120 characters. 
